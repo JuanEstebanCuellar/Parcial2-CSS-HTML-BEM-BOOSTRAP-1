@@ -1,12 +1,11 @@
 # Examen HTML • CSS • BEM • Bootstrap  
 ### Examen asignado: 1 - Página “Ogani”
 
----
+---------------------
 
 ## 📋 Descripción general:
 
 Este proyecto corresponde al **examen práctico** de la asignatura **Programación 4**, enfocado en la creación de una página web estática que replique el diseño proporcionado.
----
 
 ## 🧩 Tecnologías utilizadas:
 
@@ -19,9 +18,12 @@ Este proyecto corresponde al **examen práctico** de la asignatura **Programaci�
 
 ## 🚀 Instrucciones de ejecución:
 
-1- Clona el repositorio: "git clone https://github.com/usuario/ogani-exam.git"
-2- Abre el proyecto en tu editor.
-3- Abre el archivo index.html en tu navegador.
+1. Clona el repositorio:  
+   `git clone https://github.com/usuario/ogani-exam.git`
+
+2. Abre el proyecto en tu editor.
+
+3. Abre el archivo `index.html` en tu navegador.
 
 ## 📱 Adaptabilidad responsive:
 
