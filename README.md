@@ -17,7 +17,6 @@ Este proyecto corresponde al **examen práctico** de la asignatura **Programaci�
   <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 </p>
 
-
 ## 🚀 Instrucciones de ejecución:
 
 1- Clona el repositorio: "git clone https://github.com/usuario/ogani-exam.git"
@@ -26,9 +25,9 @@ Este proyecto corresponde al **examen práctico** de la asignatura **Programaci�
 
 ## 📱 Adaptabilidad responsive:
 
--Celulares
--Computadores
--Tablets
+- Celulares
+- Computadores
+- Tablets
 
 ## 🧑‍💻 Autor:
 
