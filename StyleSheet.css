@@ -1,0 +1,32 @@
+/* Estilos para la barra superior */
+.barra-superior {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.barra-superior__contacto span {
+    color: #1b1b1b;
+}
+
+.barra-superior__redes a {
+    color: #1b1b1b !important;
+}
+
+.barra-superior__redes a {
+    color: #ce0f0f;
+}
+
+/* Unificar tipografía y estilo del dropdown */
+.dropdown-menu,
+.dropdown-menu a {
+  font-family: inherit !important; /* Usa la misma fuente del resto */
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #000 !important; /* Negro */
+}
+
+/* Quita el color azul del hover */
+.dropdown-menu a:hover {
+  background-color: #f8f9fa; /* gris claro */
+  color: #000 !important;
+}
