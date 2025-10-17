@@ -19,7 +19,7 @@ Este proyecto corresponde al **examen práctico** de la asignatura **Programaci�
 ## 🚀 Instrucciones de ejecución:
 
 1. Clona el repositorio:  
-   `git clone https://github.com/usuario/ogani-exam.git`
+   `git clone https://github.com/JuanEstebanCuellar/Parcial2-CSS-HTML-BEM-BOOSTRAP-1.git`
 
 2. Abre el proyecto en tu editor.
 
