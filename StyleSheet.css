@@ -1,6 +1,4 @@
-/* ===================================
-   Variables CSS
-   =================================== */
+/*Parametros principales*/
 :root {
   --color-principal: #7fad39;
   --color-hover: #6d9632;
@@ -10,9 +8,7 @@
   --blanco: #ffffff;
 }
 
-/* ===================================
-   Estilos base
-   =================================== */
+/*Estilos base*/
 * {
   margin: 0;
   padding: 0;
@@ -40,9 +36,7 @@ img {
   height: auto;
 }
 
-/* ===================================
-   Barra superior
-   =================================== */
+/*Barra superior*/
 .barra-contacto-superior {
   background-color: var(--fondo-claro);
   padding: 10px 0;
@@ -68,9 +62,7 @@ img {
   color: var(--color-principal);
 }
 
-/* ===================================
-   Encabezado principal
-   =================================== */
+/*Encabezado principal*/
 .encabezado {
   padding: 20px 0;
 }
@@ -148,9 +140,7 @@ img {
   font-weight: 700;
 }
 
-/* ===================================
-   Sección principal (Hero)
-   =================================== */
+/*Sección principal (Hero)*/
 .seccion-principal {
   padding: 2px 0;
 }
@@ -349,3 +339,224 @@ img {
   border-radius: 0;
   box-shadow: none;
 }
+
+/* ================================
+   Media Queries para Responsive
+   ================================ */
+
+/* =======================
+   Tablets (≤ 992px)
+   ======================= */
+@media (max-width: 992px) {
+  /* Ocultar barra superior */
+  .barra-contacto-superior {
+    display: none;
+  }
+
+  /* Header en columna */
+  .encabezado .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Logo centrado */
+  .logo {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .menu-principal {
+    width: 100%;
+  }
+
+  /* Menú centrado y en bloque */
+  .menu-principal ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Carrito centrado debajo */
+  .carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .carrito ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Buscador */
+  .buscador {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .buscador__formulario {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .buscador__formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .buscador__categorias {
+    border-right: none;
+    border-bottom: 1px solid #ebebeb;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .btn-buscar {
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .buscador__telefono {
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  /* Banner */
+  .banner-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+  }
+
+  .banner__texto {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .banner__imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner__imagen img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Categorías */
+  .categorias {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* =======================
+   Celulares medianos (≤ 768px)
+   ======================= */
+@media (max-width: 768px) {
+  /* Menú principal en columna */
+  .menu-principal ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Encabezado centrado */
+  .encabezado {
+    text-align: center;
+  }
+
+  /* Sección principal en columna */
+  .seccion-principal .row {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .categorias {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  /* Banner */
+  .banner__texto h2 {
+    font-size: 30px;
+  }
+
+  .banner__texto p {
+    font-size: 14px;
+  }
+
+  .banner__imagen img {
+    width: 90%;
+  }
+
+  .buscador__telefono__texto {
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
+}
+
+}
+
+/* =======================
+   Celulares pequeños (≤ 480px)
+   ======================= */
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  /* Botones */
+  .btn-principal,
+  .btn-buscar {
+    padding: 12px 25px;
+    font-size: 13px;
+  }
+
+  /* Banner */
+  .banner__texto h2 {
+    font-size: 24px;
+  }
+
+  .banner__imagen img {
+    width: 100%;
+  }
+
+  /* Teléfono */
+  .buscador__telefono__icono {
+    width: 40px;
+    height: 40px;
+  }
+
+  .buscador__telefono__icono i {
+    font-size: 16px;
+  }
+
+  /* Ocultar precio del carrito para ganar espacio */
+  .carrito__precio {
+    display: none;
+  }
+}
+
